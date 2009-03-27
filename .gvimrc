@@ -1,4 +1,4 @@
-colo nuvola
-se guifont=-*-terminus-*-r-*-*-12-*-*-*-*-*-*-*
+colorscheme habiLight
+set guifont=Terminus:h12:cANSI
 
 se guioptions=a
