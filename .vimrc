@@ -69,7 +69,7 @@ set bg=dark
 if has( "gui_running" )
     set bg=light
     colorscheme habiLight
-    set guifont=-*-terminus-*-r-*-*-12-*-*-*-*-*-*-*
+    set guifont=Terminus:h12:cANSI
     set guioptions=a
     set lines=999
     set columns=999
