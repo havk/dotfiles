@@ -66,6 +66,9 @@ noremap <S-BS> <C-u>
 noremap <S-Space> <C-d>
 noremap <S-Return> zt
 
+nnoremap <Leader>q :.,$g/^/ normal@
+vnoremap <Leader>q :g/^/ normal@
+
 set bg=dark
 
 " GUI stuff
