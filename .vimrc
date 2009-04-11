@@ -40,6 +40,25 @@ nnoremap <S-TAB> <C-W>W
 " use ² (square) two switch between alternate buffer
 nnoremap ² :b#<CR>
 
+" These settings are from http://clavier-dvorak.org/wiki/Utilisateur:Kaze/vimrc
+" but a little customized
+" I need another Esc key
+inoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>
+inoremap <S-Tab> <Tab>
+vnoremap <S-Tab> <Tab>
+inoremap <S-Return> <Esc>
+vnoremap <S-Return> <Esc>
+inoremap <M-Return> <Esc>
+vnoremap <M-Return> <Esc>
+
+" lazy scrolling
+noremap <BS> <PageUp>
+noremap <Space> <PageDown>
+noremap <S-BS> <C-u>
+noremap <S-Space> <C-d>
+noremap <S-Return> zt
+
 set bg=dark
 
 " GUI stuff
