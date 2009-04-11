@@ -40,3 +40,15 @@ nnoremap <S-TAB> <C-W>W
 " use ² (square) two switch between alternate buffer
 nnoremap ² :b#<CR>
 
+set bg=dark
+
+" GUI stuff
+if has( "gui_running" )
+    set bg=light
+    colorscheme habiLight
+    set guifont=-*-terminus-*-r-*-*-12-*-*-*-*-*-*-*
+    set guioptions=a
+    set lines=999
+    set columns=999
+endif
+

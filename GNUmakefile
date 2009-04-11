@@ -1,4 +1,4 @@
-VIM_FILES	=.vimrc .gvimrc .vim
+VIM_FILES	=.vimrc .vim
 ZSH_FILES	=.zshrc
 X11_FILES	=.Xdefaults
 
