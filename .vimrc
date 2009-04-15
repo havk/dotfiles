@@ -4,6 +4,10 @@ set nocompatible
 set formatoptions="q"
 set cpoptions-=$<
 set ruler
+set scrolloff=1
+set encoding=utf-8
+set nostartofline
+set autowrite
 
 " Tabulation
 set tabstop=4
