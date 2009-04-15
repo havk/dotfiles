@@ -4,6 +4,10 @@ set nocompatible
 set formatoptions="q"
 set cpoptions-=$<
 set ruler
+set scrolloff=1
+set encoding=utf-8
+set nostartofline
+set autowrite
 
 " Tabulation
 set tabstop=4
@@ -39,4 +43,35 @@ nnoremap <S-TAB> <C-W>W
 
 " use ² (square) two switch between alternate buffer
 nnoremap ² :b#<CR>
+
+" These settings are from http://clavier-dvorak.org/wiki/Utilisateur:Kaze/vimrc
+" but a little customized
+" I need another Esc key
+inoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>
+inoremap <S-Tab> <Tab>
+vnoremap <S-Tab> <Tab>
+inoremap <S-Return> <Esc>
+vnoremap <S-Return> <Esc>
+inoremap <M-Return> <Esc>
+vnoremap <M-Return> <Esc>
+
+" lazy scrolling
+noremap <BS> <PageUp>
+noremap <Space> <PageDown>
+noremap <S-BS> <C-u>
+noremap <S-Space> <C-d>
+noremap <S-Return> zt
+
+set bg=dark
+
+" GUI stuff
+if has( "gui_running" )
+    set bg=light
+    colorscheme habiLight
+    set guifont=-*-terminus-*-r-*-*-12-*-*-*-*-*-*-*
+    set guioptions=a
+    set lines=999
+    set columns=999
+endif
 

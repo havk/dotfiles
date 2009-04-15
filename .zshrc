@@ -13,7 +13,7 @@ RPROMPT="(%{${smul}%}%~%{${rmul}%})"
 export CLICOLOR=1
 
 #key binding
-#bindkey -e      # use vi keymap
+bindkey -e      # use emacs keymap
 # Customize a bit the bindings
 bindkey "$terminfo[kdch1]"    'delete-char'                     #Suppr
 bindkey "$terminfo[khome]"    'beginning-of-line'               #Home key
