@@ -9,6 +9,9 @@ set encoding=utf-8
 set nostartofline
 set autowrite
 
+set listchars=tab:».,trail:¤
+set list
+
 " Tabulation
 set tabstop=4
 set shiftwidth=4
