@@ -76,5 +76,8 @@ if has( "gui_running" )
     set guioptions=a
     set lines=999
     set columns=999
+else
+    " color scheme for the console
+    colorscheme tango
 endif
 
