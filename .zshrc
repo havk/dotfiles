@@ -42,3 +42,8 @@ HISTFILE=~/.history
 export EDITOR=/usr/local/bin/vim
 export MAIL=$HOME/Maildir
 
+# load local config if exists
+if [[ -x $HOME/.zshrc.local ]] ; then
+	echo "Loading file .zshrc.local"
+	. $HOME/.zshrc.local
+fi
