@@ -38,6 +38,9 @@ HISTFILE=~/.history
 autoload -U compinit
 compinit
 
+#expansion
+setopt extended_glob
+
 # my environment variable
 export EDITOR=/usr/local/bin/vim
 export MAIL=$HOME/Maildir
