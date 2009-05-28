@@ -35,8 +35,8 @@ SAVEHIST=1000
 HISTFILE=~/.history
 
 #completion
-#autoload -U compinit
-#compinit
+autoload -U compinit
+compinit
 
 # my environment variable
 export EDITOR=/usr/local/bin/vim
