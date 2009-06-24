@@ -8,6 +8,8 @@ set scrolloff=1
 set encoding=utf-8
 set nostartofline
 set autowrite
+set lazyredraw
+set autowrite
 
 set listchars=tab:».,trail:¤
 set list
