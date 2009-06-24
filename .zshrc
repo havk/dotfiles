@@ -35,10 +35,18 @@ SAVEHIST=1000
 HISTFILE=~/.history
 
 #completion
-#autoload -U compinit
-#compinit
+autoload -U compinit
+compinit
+
+#expansion
+setopt extended_glob
 
 # my environment variable
 export EDITOR=/usr/local/bin/vim
 export MAIL=$HOME/Maildir
 
+# load local config if exists
+if [[ -x $HOME/.zshrc.local ]] ; then
+	echo "Loading file .zshrc.local"
+	. $HOME/.zshrc.local
+fi

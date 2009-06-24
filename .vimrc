@@ -8,6 +8,11 @@ set scrolloff=1
 set encoding=utf-8
 set nostartofline
 set autowrite
+set lazyredraw
+set autowrite
+
+set listchars=tab:».,trail:¤
+set list
 
 " Tabulation
 set tabstop=4
@@ -63,6 +68,9 @@ noremap <S-BS> <C-u>
 noremap <S-Space> <C-d>
 noremap <S-Return> zt
 
+nnoremap <Leader>q :.,$g/^/ normal@
+vnoremap <Leader>q :g/^/ normal@
+
 set bg=dark
 
 " GUI stuff
@@ -73,5 +81,8 @@ if has( "gui_running" )
     set guioptions=a
     set lines=999
     set columns=999
+else
+    " color scheme for the console
+    colorscheme tango
 endif
 
